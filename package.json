@@ -1,0 +1,8 @@
+{
+  "name": "hooks-kit",
+  "version": "1.0.0",
+  "description": "Hooks Kit is a collection of custom React hooks designed to streamline and enhance your React development experience. This repository provides a comprehensive set of utility hooks addressing common use cases in modern React applications.",
+  "keywords": [],
+  "author": "Gina Guerrero",
+  "license": "ISC"
+}
