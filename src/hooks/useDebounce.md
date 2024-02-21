@@ -1,0 +1,16 @@
+# useDebounce
+
+React hook that debounces a string value. It takes two parameters: the value to debounce and the delay in milliseconds. It returns the debounced value and a loading indicator. This hook is useful for delaying actions triggered by user input, such as search queries.
+
+## API
+
+```typescript
+const [debouncedValue, isLoading] = useDebounce(value, 400);
+```
+
+### Params
+
+| Property | Description            | Type     | Default |
+| -------- | ---------------------- | -------- | ------- |
+| value    | The value to debounce. | `string` | -       |
+| delay    | Delay in milliseconds. | `number` | 500     |
