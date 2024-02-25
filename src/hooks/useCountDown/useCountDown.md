@@ -1,8 +1,8 @@
 # useCountDown
 
-React hook `useCountDown`, allows you to implement a countdown timer in React applications easily. It's useful for cases where you need to display a timer or perform actions after a certain amount of time.
+React hook `useCountDown`, allows you to implement a countdown timer. Support pause and reset actions
 
-## API
+## Usage
 
 ```typescript
 export const CountdownTimer = () => {
@@ -25,3 +25,12 @@ export const CountdownTimer = () => {
 | -------- | --------------------------------------------------------------------------------------------------------- | -------- | ------- |
 | total    | The total number of seconds for the countdown.                                                            | `number` | -       |
 | ms       | (Optional) The interval in milliseconds between each decrement of the countdown timer. Default is 1000ms. | `number` | 1000    |
+
+### Returns
+
+| Property | Description                                                 | Type         |
+| -------- | ----------------------------------------------------------- | ------------ |
+| counter  | The current value of the countdown timer.                   | `number`     |
+| start    | Function to start the countdown timer.                      | `() => void` |
+| pause    | Function to pause the countdown timer.                      | `() => void` |
+| reset    | Function to reset the countdown timer to its initial value. | `() => void` |
