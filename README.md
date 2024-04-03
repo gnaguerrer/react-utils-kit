@@ -1,7 +1,13 @@
-# Hooks-Kit
+# React Utils Kit
 
-Hooks Kit is a collection of custom React hooks designed to streamline and enhance your React development experience. This repository provides a comprehensive set of utility hooks addressing common use cases in modern React applications.
+React Utils Kit is a collection of custom React hooks and utilitie designed to streamline and enhance your React development experience. This repository provides a comprehensive set of utility hooks addressing common use cases in modern React applications.
 
-## Hooks
+## Available Hooks
 
-[useDebounce](./src/hooks/useDebounce.md)
+- [`useBottomScroll`](./src/hooks/useBottomScroll/README.md)
+- [`useCountDown`](./src/hooks/useCountDown/README.md)
+- [`useDebounce`](./src/hooks/useDebounce/README.md)
+- [`useDownload`](./src/hooks/useDownload/README.md)
+- [`useMediaQuery`](./src/hooks/useMediaQuery/README.md)
+- [`useMouseDown`](./src/hooks/useMouseDown/README.md)
+- [`useToggle`](./src/hooks/useToggle/README.md)
