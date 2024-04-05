@@ -1,6 +1,6 @@
 # React Utils Kit
 
-React Utils Kit is a collection of custom React hooks and utilitie designed to streamline and enhance your React development experience. This repository provides a comprehensive set of utility hooks addressing common use cases in modern React applications.
+React Utils Kit is a collection of custom React hooks and utilities designed to streamline and enhance your React development experience. This repository provides a comprehensive set of utility hooks addressing common use cases in modern React applications.
 
 ## Available Hooks
 
