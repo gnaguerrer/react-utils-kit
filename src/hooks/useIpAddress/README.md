@@ -1,4 +1,4 @@
-# useIpAddress Hook
+# useIpAddress
 
 This custom hook allows you to retrieve the IP address of the client using an external API. It fetches the IP address from the [ipecho](https://ipecho.net/).
 

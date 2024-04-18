@@ -11,3 +11,9 @@ React Utils Kit is a collection of custom React hooks and utilities designed to 
 - [`useMediaQuery`](./src/hooks/useMediaQuery/README.md)
 - [`useMouseDown`](./src/hooks/useMouseDown/README.md)
 - [`useToggle`](./src/hooks/useToggle/README.md)
+- [`useWindowSize`](./src/hooks/useWindowSize/README.md)
+- [`useIpAddress`](./src/hooks/useIpAddress/README.md)
+
+## Services
+
+- [`Twitter OAuth`](./src/hooks/twitterOauth/README.md)
