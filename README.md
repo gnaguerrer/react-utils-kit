@@ -16,4 +16,5 @@ React Utils Kit is a collection of custom React hooks and utilities designed to 
 
 ## Services
 
-- [`Twitter OAuth`](./src/hooks/twitterOauth/README.md)
+- [`Twitter OAuth`](./src/services/twitterOauth/README.md)
+- [`React Native Version Check`](./src/services/rnVersionCheck/README.md)
