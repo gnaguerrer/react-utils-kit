@@ -8,11 +8,12 @@ React Utils Kit is a collection of custom React hooks and utilities designed to 
 - [`useCountDown`](./src/hooks/useCountDown/README.md)
 - [`useDebounce`](./src/hooks/useDebounce/README.md)
 - [`useDownload`](./src/hooks/useDownload/README.md)
+- [`useIpAddress`](./src/hooks/useIpAddress/README.md)
 - [`useMediaQuery`](./src/hooks/useMediaQuery/README.md)
 - [`useMouseDown`](./src/hooks/useMouseDown/README.md)
+- [`usePrevious`](./src/hooks/usePrevious/README.md)
 - [`useToggle`](./src/hooks/useToggle/README.md)
 - [`useWindowSize`](./src/hooks/useWindowSize/README.md)
-- [`useIpAddress`](./src/hooks/useIpAddress/README.md)
 
 ## Services
 
