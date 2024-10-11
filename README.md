@@ -14,6 +14,7 @@ React Utils Kit is a collection of custom React hooks and utilities designed to 
 - [`usePrevious`](./src/hooks/usePrevious/README.md)
 - [`useToggle`](./src/hooks/useToggle/README.md)
 - [`useWindowSize`](./src/hooks/useWindowSize/README.md)
+- [`useAppState`](./src/hooks/useAppState/README.md)
 
 ## Services
 
