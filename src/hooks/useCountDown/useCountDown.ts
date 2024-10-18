@@ -13,28 +13,50 @@ export const useCountDown: (total: number, ms?: number) => CountDownHook = (
 ) => {
   const [counter, setCountDown] = useState(total);
   const [startCountDown, setStartCountDown] = useState(false);
-  // Store the created interval
+
   const intervalId = useRef<NodeJS.Timer | number>();
+  const startTime = useRef<number>(0);
+  const remainingTime = useRef<number>(total * ms);
 
-  const start: () => void = () => setStartCountDown(true);
+  const start = () => {
+    if (!startCountDown) {
+      setStartCountDown(true);
+      startTime.current = Date.now();
+    }
+  };
 
-  const pause: () => void = () => setStartCountDown(false);
+  const pause = () => {
+    if (startCountDown) {
+      setStartCountDown(false);
+      remainingTime.current =
+        remainingTime.current - (Date.now() - startTime.current);
+    }
+  };
 
-  const reset: () => void = () => {
-    clearInterval(intervalId.current);
+  const reset = () => {
+    clearInterval(intervalId.current as number);
     setStartCountDown(false);
     setCountDown(total);
+    remainingTime.current = total * ms;
   };
 
   useEffect(() => {
-    intervalId.current = setInterval(() => {
-      startCountDown && counter > 0 && setCountDown((counter) => counter - 1);
-    }, ms);
+    if (startCountDown) {
+      intervalId.current = setInterval(() => {
+        const elapsedTime = Date.now() - startTime.current;
+        const timeLeft = Math.max(0, remainingTime.current - elapsedTime);
 
-    if (counter === 0) clearInterval(intervalId.current);
+        setCountDown(Math.ceil(timeLeft / ms));
 
-    return () => clearInterval(intervalId.current);
-  }, [startCountDown, counter, ms]);
+        if (timeLeft <= 0) {
+          clearInterval(intervalId.current as number);
+          setStartCountDown(false);
+        }
+      }, 100);
+
+      return () => clearInterval(intervalId.current as number);
+    }
+  }, [startCountDown, ms]);
 
   return { counter, start, pause, reset };
 };
