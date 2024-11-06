@@ -24,3 +24,4 @@ React Utils Kit is a collection of custom React hooks and utilities designed to 
 ## Utils
 
 - [`formatLargeCurrency`](./src/utils/formatLargeCurrency/README.md)
+- [`maskText`](./src/utils/maskText/README.md)
